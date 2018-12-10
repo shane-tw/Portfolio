@@ -1,0 +1,23 @@
+@import "scss/variables";
+
+// Libraries
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Our SCSS
+@import "scss/About.scss";
+@import "scss/ImageCarousel.scss";
+@import "scss/socialIcons.scss";
+@import "scss/Footer.scss";
+
+$navbar-height: $nav-link-height + $nav-link-padding-y * 2;
+
+body {
+  padding-top: $navbar-height;
+}
+
+h1,h2,h3 {
+  &.navpad {
+    padding-top: $navbar-height;
+    margin-top: -$navbar-height;
+  }
+}
