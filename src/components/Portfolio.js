@@ -67,8 +67,8 @@ export const Portfolio = () => (
             <CardBody>
               <CardTitle>
                 Hangman Game&nbsp;
-                <a href="http://shanepm.github.io/CIT-CoderDojo-Project" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fas', 'external-link-alt']} /></a>&nbsp;
-                <a href="https://github.com/shanepm/CIT-CoderDojo-Project" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fas', 'external-link-alt']} /></a>&nbsp;
+                <a href="https://github.com/shanepm/Hangman" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>
               </CardTitle>
               <CardText>
                 You may be thinking "Hangman? That's really basic".

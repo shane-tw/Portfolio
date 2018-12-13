@@ -55,15 +55,15 @@ class ImageCarousel extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.caption} />
-          <CarouselCaption className="d-block" captionHeader={item.caption} />
+          <CarouselCaption className="d-block" captionHeader={item.caption} captionText="" />
         </CarouselItem>
       );
     });
 
     return (
       <Carousel
+        interval={8000}
         keyboard={false}
-        interval={false}
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}

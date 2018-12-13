@@ -61,6 +61,10 @@ export const InfoCard = () => (
                     href="https://steamcommunity.com/profiles/76561198155260484" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={['fab', 'steam']} color="white" fixedWidth />
                 </a>
+                <a className="social-icon social-icon-github social-icon--large" title="Github profile"
+                    href="https://github.com/shanepm" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'github']} color="black" fixedWidth />
+                </a>
               </div>
             </CardBody>
           </Col>
