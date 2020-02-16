@@ -35,18 +35,18 @@ export default class Header extends React.Component {
             <NavbarBrand href="#top">Shane's Site</NavbarBrand>    
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Scrollspy items={ ['about', 'portfolio', 'vulnerabilities', 'contact'] } currentClassName="active" className="navbar-nav" offset={-50}>
+              <Scrollspy items={ ['about', 'projects', 'vulnerabilities', 'contact'] } currentClassName="active" className="navbar-nav" offset={-50}>
                 <NavItem>
                   <NavLink href="#about" onClick={this.close}>About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#portfolio" onClick={this.close}>Portfolio</NavLink>
+                  <NavLink href="#projects" onClick={this.close}>Projects</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#workexperience" onClick={this.close}>Work Experience</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="#vulnerabilities" onClick={this.close}>Vulnerabilities</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#contact" onClick={this.close}>Contact</NavLink>
                 </NavItem>
               </Scrollspy>
             </Collapse>

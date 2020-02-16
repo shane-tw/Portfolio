@@ -1,4 +1,7 @@
 .carousel {
+  height: 250px;
+  overflow: hidden;
+
   &-control {
     &-prev, &-next {
       cursor: pointer;
@@ -6,11 +9,8 @@
   }
 
   &-item {
-    transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-            backface-visibility: visible;
+    backface-visibility: visible;
 
     > img {
       width: 100%;

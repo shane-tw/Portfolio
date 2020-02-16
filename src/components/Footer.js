@@ -6,7 +6,7 @@ export const Footer = () => (
   <footer>
     <Container>
       <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-        <span>&copy; Shane O Donovan</span>
+        <span>&copy; Shane O Donovan &mdash; kenshiisod+cv@gmail.com</span>
         <div>
           <a className="social-icon social-icon--small" title="Facebook profile"
               href="https://www.facebook.com/shane.donovan.12" target="_blank" rel="noopener noreferrer">
@@ -20,7 +20,7 @@ export const Footer = () => (
               href="https://steamcommunity.com/profiles/76561198155260484" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={['fab', 'steam']} color="white" fixedWidth />
           </a>
-          <a className="social-icon social-icon--small" title="Github profile"
+          <a className="social-icon social-icon--small" title="GitHub profile"
               href="https://github.com/shanepm" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={['fab', 'github']} color="white" fixedWidth />
           </a>
