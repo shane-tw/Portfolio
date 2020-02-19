@@ -1,7 +1,6 @@
 import React from 'react'
 import { Row, Col, Card, CardBody, CardText,
          CardTitle, Container, Badge } from 'reactstrap'
-import ImageCarousel from './ImageCarousel.js'
 
 export const Projects = () => (
   <section id="projects">
@@ -12,12 +11,12 @@ export const Projects = () => (
           <Col md="7">
             <CardBody>
               <CardTitle>
-                <a href="http://www.aoifesnotes.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://botw.shane.rs/" target="_blank" rel="noopener noreferrer">
                   BotW Save Converter - Browser Edition
                 </a>
               </CardTitle>
               <CardText>
-                This is a web application which allows uploading a <em>The Legend of Zelda: Breath of the Wild</em> save directory, converting it from Wii U &lt;-&gt; Switch format. The save files in the directory have their bytes swapped, and the resulting files are then zipped and downloaded, all client-side. It is a Rust port of an existing C# CLI program.
+                This is a Rust WebAssembly port of an existing C# application. It allows uploading a <em>Breath of the Wild</em> save directory, converting it from Wii U &lt;-&gt; Switch format. The saves in the directory have their bytes swapped and are then zipped for downloading. Everything is done client-side and a web  worker ensures the page doesn't freeze.
               </CardText>
               <Badge color="secondary">HTML</Badge>
               <Badge color="secondary" className="ml-1">CSS</Badge>
@@ -26,10 +25,7 @@ export const Projects = () => (
             </CardBody>
           </Col>
           <Col md="5">
-            <ImageCarousel items={[
-              {src: 'images/aoife_old.png', caption: 'Before Redesign'},
-              {src: 'images/aoife_new.png', caption: 'After Redesign'}
-            ]} />
+            <img style={{maxWidth: '100%', padding: '5px', border: '1px solid rgba(0, 0, 0, 0.125)'}} src="images/botw-web.png" alt="BOTW Save Converter" title="BOTW Save Converter"/>
           </Col>
         </Row>
       </Card>
@@ -58,12 +54,29 @@ export const Projects = () => (
             </CardBody>
           </Col>
           <Col md="5">
-            <ImageCarousel items={[
-              {src: 'images/hangman_guest.png', caption: 'Guest View'},
-              {src: 'images/hangman_won.png', caption: 'Game Won'},
-              {src: 'images/hangman_lost.png', caption: 'Game Lost'},
-              {src: 'images/hangman_scores.png', caption: 'Scores'}
-            ]} />
+            <img style={{maxWidth: '100%', padding: '5px', border: '1px solid rgba(0, 0, 0, 0.125)'}} src="images/hangman_won.png" alt="Game Won" title="Game Won"/>
+          </Col>
+        </Row>
+      </Card>
+      <Card className="mb-4">
+        <Row className="no-gutters">
+          <Col md="7">
+            <CardBody>
+              <CardTitle>
+                <a href="https://shanepm.github.io/CIT-CoderDojo-Project" target="_blank" rel="noopener noreferrer">
+                  CIT CoderDojo Website
+                </a>
+              </CardTitle>
+              <CardText>
+                As part of our 1<sup>st</sup> Year <i>Web Development Fundamentals</i> module, one of our assignments was to create a website for the CIT CoderDojo club.
+                I considered accessibility, semantics, and responsiveness while developing it. I scored 98% in this assignment.
+              </CardText>
+              <Badge color="secondary">HTML</Badge>
+              <Badge color="secondary" className="ml-1">CSS</Badge>
+            </CardBody>
+          </Col>
+          <Col md="5">
+            <img style={{maxWidth: '100%', padding: '5px', border: '1px solid rgba(0, 0, 0, 0.125)'}} src="images/coderdojo_midterm.png" alt="Midterm Camp" title="Midterm Camp"/>
           </Col>
         </Row>
       </Card>
@@ -84,36 +97,7 @@ export const Projects = () => (
             </CardBody>
           </Col>
           <Col md="5">
-            <ImageCarousel items={[
-              {src: 'images/aoife_old.png', caption: 'Before Redesign'},
-              {src: 'images/aoife_new.png', caption: 'After Redesign'}
-            ]} />
-          </Col>
-        </Row>
-      </Card>
-      <Card className="mb-4">
-        <Row className="no-gutters">
-          <Col md="7">
-            <CardBody>
-              <CardTitle>
-                <a href="/CIT-CoderDojo-Project" target="_blank" rel="noopener noreferrer">
-                  CIT CoderDojo Website
-                </a>
-              </CardTitle>
-              <CardText>
-                As part of our 1<sup>st</sup> Year <i>Web Development Fundamentals</i> module, one of our assignments was to create a website for the CIT CoderDojo club.
-                I considered accessibility, semantics, and responsiveness while developing it. I scored 98% in this assignment.
-              </CardText>
-              <Badge color="secondary">HTML</Badge>
-              <Badge color="secondary" className="ml-1">CSS</Badge>
-            </CardBody>
-          </Col>
-          <Col md="5">
-            <ImageCarousel items={[
-              {src: 'images/coderdojo_home.png', caption: 'Home'},
-              {src: 'images/coderdojo_midterm.png', caption: 'Midterm Camp'},
-              {src: 'images/coderdojo_findus.png', caption: 'Find Us'}
-            ]} />
+            <img style={{maxWidth: '100%', padding: '5px', border: '1px solid rgba(0, 0, 0, 0.125)'}} src="images/aoife_new.png" alt="After Redesign" title="After Redesign"/>
           </Col>
         </Row>
       </Card>
